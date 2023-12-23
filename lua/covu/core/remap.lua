@@ -5,7 +5,7 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
 
--- Moves next line into current line with a space 
+-- Moves next line into current line with a space
 vim.keymap.set("n", "J", "mzJ`z")
 -- moves half document up/down but keeps centered
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
@@ -54,4 +54,3 @@ vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', { noremap = true, silent = true 
 
 -- Save file with Ctrl + s in visual mode
 vim.api.nvim_set_keymap('x', '<C-s>', ':w<CR>', { noremap = true, silent = true })
-
